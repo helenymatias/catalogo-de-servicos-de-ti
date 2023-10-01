@@ -99,3 +99,9 @@ p {
 .solicitar:hover {
     background-color: rgb(228, 110, 91);
 }
+
+footer {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
