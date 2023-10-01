@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,500&family=Poppins:wght@300&family=Quicksand:wght@300&family=Roboto:wght@300&display=swap');
+
+
+body {
+    background: #efefef;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background-color: rgb(228, 110, 91);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 580px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 580px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    background-color: rgb(234, 52, 24);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(228, 110, 91);
+}

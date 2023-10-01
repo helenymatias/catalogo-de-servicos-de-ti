@@ -37,6 +37,12 @@ p {
     font-family: 'Jost', sans-serif;
     font-family: 'Quicksand', sans-serif;
     font-family: 'Roboto', sans-serif;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.siteNome:hover {
+    color: rgb(234, 52, 24);
 }
 
 .servicos {
@@ -76,4 +82,20 @@ p {
     transition: .5s;
     font-size: 18px;
     color: rgb(234, 52, 24);
+}
+
+.solicitar {
+    background: rgb(234, 52, 24);
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    font-size: 18px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.solicitar:hover {
+    background-color: rgb(228, 110, 91);
 }

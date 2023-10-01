@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Solicitar Serviço de Segurança de Dados</title>
+</head>
+
+<body>
+    <header>
+        <h1>Solicitar Serviço de Segurança de Dados</h1>
+    </header>
+    <section>
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+            </div>
+            <div class="form-group">
+                <label for="empresa">Nome da Empresa:</label>
+                <input type="text" id="empresa" name="empresa">
+            </div>
+            <div class="form-group">
+                <label for="servico">Tipo de Serviço:</label>
+                <select id="servico" name="servico">
+                    <option value="Avaliação de Segurança">Avaliação de Segurança</option>
+                    <option value="Implementação de Medidas">Implementação de Medidas</option>
+                    <option value="Treinamento de Equipe">Treinamento de Equipe</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="descricao">Descrição das Necessidades:</label>
+                <textarea id="descricao" name="descricao" rows="4" style="resize: none;"></textarea>
+            </div>
+            <button type="submit"><a href="../servico4.html">Voltar</a></button>
+            <button type="submit">Enviar Solicitação</button>
+        </form>
+    </section>
+</body>
+
+</html>
