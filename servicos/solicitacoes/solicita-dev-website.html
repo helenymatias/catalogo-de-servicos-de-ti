@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Solicitar Desenvolvimento de Websites</title>
 </head>
 
@@ -43,9 +44,44 @@
         </div>
         <div class="form-group">
             <button type="submit"><a href="../servico1.html">Voltar</a></button>
-            <button type="submit">Enviar Solicitação</button>
+            <button type="submit" onclick="validar()">Enviar Solicitação</button>
         </div>
     </form>
+
+    <script>
+        function validar() {
+            const nome = document.getElementById("nome").value;
+            const email = document.getElementById("email").value;
+            const telefone = document.getElementById("telefone").value;
+            const empresa = document.getElementById("empresa").value;
+            const descricao = document.getElementById("descricao").value;
+            const prazo = document.getElementById("prazo").value;
+            const orcamento = document.getElementById("orcamento").value;
+        
+            const dados = {
+                nome: nome,
+                email: email,
+                telefone: telefone,
+                empresa: empresa,
+                descricao: descricao,
+                prazo: prazo,
+                orcamento: orcamento
+            };
+        
+            const dadosJSON = JSON.stringify(dados);
+        
+            localStorage.setItem("dadosFormulario", dadosJSON);
+        
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Solicitação enviada com sucesso!',
+                showConfirmButton: false,
+                timer: 3600
+            });
+
+        }        
+    </script>
 </body>
 
 </html>
